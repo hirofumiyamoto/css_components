@@ -1,0 +1,367 @@
+/*
+# 見出し(Heading)
+
+説明文言
+
+```
+<h1>H1(ロゴになる気が)</h1>
+<h2>H2</h2>
+<h3>H3</h3>
+<h4>H4</h4>
+<h5>H5</h5>
+<h6>H6</h6>
+```
+*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.1;
+  color: inherit;
+}
+
+h1,
+h2,
+h3 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+h4,
+h5,
+h6 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+h1 {
+  font-size: 36px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 14px;
+}
+h6 {
+  font-size: 12px;
+}
+
+/*
+# 普通のボタン(button)
+
+説明文言
+
+```
+<div class="btn-group">
+  <button type="button" class="btn btn-default">ボタンサンプル</button>
+</div>
+```
+*/
+
+.btn {
+  display: inline-block;
+  padding: 2%;
+  margin-bottom: 0;
+  font-size: 100%;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  width: 100%;
+}
+
+/*
+# アンカーボタン(a)
+
+説明文言
+
+```
+<div class="container">
+  <a href="#" class="anchorBtn">
+    <div id="" class="btnTxt">
+      <span>ボタンサンプル</span>
+    </div>
+  </a>
+</div>
+```
+*/
+
+.container {
+  padding: 2%;
+  /*margin: 0 auto;*/
+  background: #fff;
+}
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+.anchorBtn,
+.anchorBtn:hover,
+.anchorBtn:focus {
+  display: block;
+  width: 98%;
+  height: auto;
+  text-align: center;
+  /*margin: 0 auto;*/
+  background: #ccc;
+  padding: 0 2%;
+  text-decoration: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+
+.anchorBtn .btnTxt {
+  margin: 0 auto;
+  padding: 2%;
+}
+
+/*
+# 2カラムレイアウト
+
+説明文言
+
+```
+<div class="container">
+  <div class="colHalf">
+    <h4>見出し</h4>
+    <article>
+      <p>本文</p>
+      <p>本文</p>
+    </article>
+  </div>
+
+  <div class="colHalf">
+    <h4>見出し</h4>
+    <article>
+      <p>本文</p>
+      <p>本文</p>
+    </article>
+  </div>
+</div>
+```
+*/
+
+.container {
+  padding: 2%;
+  margin: 0 auto;
+  background: #fff;
+}
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+.colHalf {
+  border: 1px solid #ccc;
+  margin: 2% 0 0 2%;
+  padding-left: 2%;
+}
+
+@media (max-width: 768px) {
+  .colHalf {
+    width: 98%;
+    margin-left: 0;
+  }
+}
+@media (min-width: 992px) {
+  .colHalf {
+    width: 98%;
+    margin-left: 0;
+  }
+}
+@media (min-width: 1200px) {
+  .colHalf {
+    float: left;
+    width: 43.7877777777%;
+    margin-left: 2%;
+  }
+}
+
+/*
+# 表(table)
+
+説明文言
+
+```
+<div class="marginTop2perseInt">
+
+  <!-- 固定ヘッダー -->
+  <table width="100%" class="" id="fixHeader">
+    <col width="20%">
+    <col width="20%">
+    <col width="20%">
+    <col width="20%">
+    <col width="20%">
+    <tr>
+      <td class="bgGray">ああああああああああああああああああああああああああああああああああ</td>
+      <td class="bgGray">ああああああああああああああああああああああああああああああああああ</td>
+      <td class="bgGray">ああああああああああああああああああああああああああああああああああ</td>
+      <td class="bgGray">ああああああああああああああああああああああああああああああああああ</td>
+      <td class="bgGray">ああああああああああああああああああああああああああああああああああ</td>
+    </tr>
+  </table>
+
+  <table width="100%">
+    <col width="20%">
+    <col width="20%">
+    <col width="20%">
+    <col width="20%">
+    <col width="20%">
+    <tr class="fixStop">
+      <td>ああああああああああああああああああああああああああああああああああううううううううううううううううううううううううううう</td>
+      <td>ああああああああああああああああああああああああああああああああああううううううううううううううううううううううううううう</td>
+      <td>ああああああああああああああああああああああああああああああああああううううううううううううううううううううううううううう</td>
+      <td>ああああああああああああああああああああああああああああああああああううううううううううううううううううううううううううう</td>
+      <td>ああああああああああああああああああああああああああああああああああううううううううううううううううううううううううううう</td>
+    </tr>
+    <tr class="fixStop">
+      <td>ああああああああああああああああああああああああああああああああああううううううううううううううううううううううううううう</td>
+      <td>ああああああああああああああああああああああああああああああああああううううううううううううううううううううううううううう</td>
+      <td>ああああああああああああああああああああああああああああああああああううううううううううううううううううううううううううう</td>
+      <td>ああああああああああああああああああああああああああああああああああううううううううううううううううううううううううううう</td>
+      <td>ああああああああああああああああああああああああああああああああああううううううううううううううううううううううううううう</td>
+    </tr>
+    <tr class="fixStop">
+      <td>ああああああああああああああああああああああああああああああああああううううううううううううううううううううううううううう</td>
+      <td>ああああああああああああああああああああああああああああああああああううううううううううううううううううううううううううう</td>
+      <td>ああああああああああああああああああああああああああああああああああううううううううううううううううううううううううううう</td>
+      <td>ああああああああああああああああああああああああああああああああああううううううううううううううううううううううううううう</td>
+      <td>ああああああああああああああああああああああああああああああああああううううううううううううううううううううううううううう</td>
+    </tr>
+    <tr class="fixStop">
+      <td>ああああああああああああああああああああああああああああああああああううううううううううううううううううううううううううう</td>
+      <td>ああああああああああああああああああああああああああああああああああううううううううううううううううううううううううううう</td>
+      <td>ああああああああああああああああああああああああああああああああああううううううううううううううううううううううううううう</td>
+      <td>ああああああああああああああああああああああああああああああああああううううううううううううううううううううううううううう</td>
+      <td>ああああああああああああああああああああああああああああああああああううううううううううううううううううううううううううう</td>
+    </tr>
+    <tr class="fixStop">
+      <td>ああああああああああああああああああああああああああああああああああううううううううううううううううううううううううううう</td>
+      <td>ああああああああああああああああああああああああああああああああああううううううううううううううううううううううううううう</td>
+      <td>ああああああああああああああああああああああああああああああああああううううううううううううううううううううううううううう</td>
+      <td>ああああああああああああああああああああああああああああああああああううううううううううううううううううううううううううう</td>
+      <td>ああああああああああああああああああああああああああああああああああううううううううううううううううううううううううううう</td>
+    </tr>
+    <tr class="fixStop">
+      <td>ああああああああああああああああああああああああああああああああああううううううううううううううううううううううううううう</td>
+      <td>ああああああああああああああああああああああああああああああああああううううううううううううううううううううううううううう</td>
+      <td>ああああああああああああああああああああああああああああああああああううううううううううううううううううううううううううう</td>
+      <td>ああああああああああああああああああああああああああああああああああううううううううううううううううううううううううううう</td>
+      <td>ああああああああああああああああああああああああああああああああああううううううううううううううううううううううううううう</td>
+    </tr>
+  </table>
+
+</div>
+```
+*/
+
+.marginTop2perseInt {
+  margin-top: 2%;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+td {
+  border: 1px solid #999;
+  background-color: #fff;
+}
+
+td.bgGray {
+  background-color: #ccc;
+}
+
+/*
+# ヘッダー
+
+説明文言
+
+```
+<div id="header">
+  <h1><a href="/" title="reload"><span>ロゴ</span></a></h1>
+  <div id="nav">
+    <ul>
+      <li><a id="" href="index.html"><span>home</span></a></li>
+      <li><a id="" class="" href="#"><span>aaa</span></a></li>
+      <li><a id="" class="" href="#"><span>bbb</span></a></li>
+      <li><a id="" class="" href="#"><span>ccc</span></a></li>
+      <li><a id="" class="" href="#"><span>ddd</span></a></li>
+    </ul>
+  </div>
+  <div class="clear"></div>
+</div>
+```
+*/
+
+#header {
+  padding-top: 2%;
+  width: 100%;
+}
+
+h1 a {
+  width: 10%;
+  float: left;
+}
+
+#nav {
+  width: 60%;
+  float: right;
+}
+
+#nav ul {
+  float: left;
+  display: block;
+  width: 100%;
+}
+
+#nav ul li {
+  display: inline;
+}
+
+#nav ul li a {
+  display: block;
+  margin-left: 2%;
+  float: left;
+}
+
+.clear {
+  clear: both;
+}
